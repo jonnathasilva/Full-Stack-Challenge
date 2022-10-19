@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Home() {
   return (
     <div className="min-h-screen bg-red-700 text-white p-4 space-y-6 flex flex-col items-center">
@@ -15,19 +17,19 @@ export function Home() {
             Dê o seu palpite na Copa do Mundo do Catar 2022!
           </h1>
 
-          <a
-            href="/signup"
+          <Link
+            to="/signup"
             className="text-center text-red-700 bg-white text-xl px-8 py-4 rounded-xl"
           >
             Criar minha conta
-          </a>
+          </Link>
 
-          <a
-            href="/login"
+          <Link
+            to="/login"
             className="text-center text-white border border-white text-xl px-8 py-4 rounded-xl"
           >
             Fazer login
-          </a>
+          </Link>
         </div>
       </div>
     </div>
